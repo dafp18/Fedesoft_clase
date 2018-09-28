@@ -15,5 +15,11 @@ module Reciclajeproy
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
+
+ENV['tmp'] = "C:/Windows/Temp"
+   
+require 'oauth/rack/oauth_filter'
+config.middleware.use OAuth::Rack::OAuthFilter
+
   end
 end
